@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Triangle Tracker</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Triangle Tracker</h1>
+      <h3>Enter three numbers to find out what type of triangle you have:</h3>
+    </div>
+    <form id="triangle">
+      <div class="form-group row">
+        <div class="col-4">
+          <label for="side-one">Enter length of side one:</label>
+          <input id="side-one" class="form-control" type="number">
+        </div>
+        <div class="col-4">
+          <label for="side-two">Enter length of side two:</label>
+          <input id="side-two" class="form-control" type="number">
+        </div>
+        <div class="col-4">
+          <label for="side-three">Enter length of side three:</label>
+          <input id="side-three" class="form-control" type="number">
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Triangle me up, Scotty.</button>
+    </form>
+    <div id="results"></div>
+  </div>
+</body>
+</html>
