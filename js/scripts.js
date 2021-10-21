@@ -1,7 +1,6 @@
 function whatTri(num1, num2, num3) {
-  console.log(num1, num2, num3);
   if (!num1 || !num2 || !num3) {
-    return "Please enter a number for each field."
+    return "Please enter a number for each field.";
   } else if (num1 === num2 && num1 === num3) {
     return "You have an equilateral triangle.";
   } else if (num1 + num2 <= num3 || num1 + num3 <= num2 || num2 + num3 <= num1) {
@@ -22,14 +21,3 @@ $(document).ready(function() {
     $("#results").text(whatTri(side1, side2, side3));
   });  
 }); 
-
-
-// if (side1 === side2 && side1 === side3) { //equilateral
-    //   $("#results").text("You have an equilateral triangle.");
-    // } else if (side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1) { //not a triangle
-    //   $("#results").text("You don't have a triangle.");
-    // } else if (side1 === side2 || side1 === side3 || side2 === side3)  { //isosceles
-    //   $("#results").text("You have an isoceles triangle.");
-    // } else { //scalene
-    //   $("#results").text("You have a scalene triangle.");
-    // }
